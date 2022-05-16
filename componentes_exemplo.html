@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>BS 5 - exemplo - componentes</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img/brush.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+              Paints
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="componentes_exemplo.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Artistas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Imagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1primeira.jpg" class="d-block w-100" alt="Leonid Afremov">
+          </div>
+          <div class="carousel-item">
+            <img src="img/2segunda.jpg" class="d-block w-100" alt="Egidio Antonaccio">
+          </div>
+          <div class="carousel-item">
+            <img src="img/3terceira.jpg" class="d-block w-100" alt="Surfergirl">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Cards -->
+    <div class="container-fluid">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="img/1primeira.jpg" width="100%" height="225" class="card-img-top" alt="rua iluminada">
+  
+              <div class="card-body">
+                <p class="card-text">Criado por Leonid Afremov, uma paisagem de duas pessoas e seu cachorro andando por uma rua iluminada e cheia de cores vivas</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Pagina do Artista</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="img/2segunda.jpg" width="100%" height="225" class="card-img-top" alt="jardim">
+  
+              <div class="card-body">
+                <p class="card-text">Criado por Egidio Antonaccio, um jardim com diversas flores de diversas cores, tendo uma estatua de melher e uma vista para o mar</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Pagina do Artista</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <img src="img/3terceira.jpg" width="100%" height="225" class="card-img-top" alt="praia">
+  
+              <div class="card-body">
+                <p class="card-text">Criado por Surfergirl,  tendo a vista de uma casa praieira e sua varando, podendo se ver o mar com varias palmeiras e flores</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Pagina do Artista</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
